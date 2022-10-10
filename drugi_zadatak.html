@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="HR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nogić Goran"> 
+    <title>drugi zadatak</title>
+</head>
+<body>
+    <form action=" /action_page.php" method="post">
+        <h3>Enter your user data and password:</h3>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="uname">User name:</label><br>
+        <input type="text" id="uname" name="uname"><br>
+        <label for="email">Enter your email:</label><br>
+        <input type="email" id="email" name="email" placeholder="somename@domain.com"><br>
+        <label for="phone">Enter your phone number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="01234 01 123456789" pattern="[0-9]{5} [0-9]{2} [0-9]{9}"><br>
+        <label for="pwd">Password:</label><br>
+        <input type="password"id="pwd" name="pwd">
+        <h3>Choose your favorite nintendo character:</h3>
+        <input type="radio" id="Super Mario" name="nintendo_char" value="Super Mario">
+        <label for="Super Mario">Super Mario</label><br>
+        <input type="radio" id="Luigi" name="nintendo_char" value="Luigi">
+        <label for="Luigi">Luigi</label><br>
+        <input type="radio" id="Bowser" name="nintendo_char" value="Bowser">
+        <label for="Bowser">Bowser</label><br>
+        <h3>How many nintendo consoles do you have?</h3>
+        <input type="checkbox" id="Only one" name="only 1" value="Only one">
+        <label for="Only one"> Only one</label><br>
+        <input type="checkbox" id="I have two" name="I have two" value="I have two">
+        <label for="I have two"> I have two</label><br>
+        <input type="checkbox" id="I have more than two" name="I have more than two" value="Boat">
+        <label for="I have more than two"> I have more than two</label><br>
+        <br>
+        <input type="submit" value="Submit"><br>
+        <br>
+        <input type="reset">
+      </form>  
+</body>
+</html>
