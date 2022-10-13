@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predavanje 4</title>
+</head>
+<body>
+    <!--Forme nastavak-->
+    <form action="#" method="get" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <label for="post">Unesite sadržaj posta</label><br>
+        <textarea id="post" name="poruka" rows="10" cols="150">
+            Ovo je testna poruka.
+            </textarea>
+    <!--button-->
+        <button type="button" onclick="alert('Hello World!')">Click Me!</button><br><br>
+        <input type="button" onclick="alert('Hello World!')" value="Click Me!"> <br><br>
+    <!--fieldset i legenda-->
+        <fieldset>
+            <legend>Osobni podaci:</legend>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Glasali bi:</legend>
+            <label for="fname">prezidente u nas:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">prezidente u vas:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        </fieldset>
+        <br>
+            <input type="submit" value="Submit">
+    <!--datalist-->
+        <br><br>
+        <label for="polaznici">Odaberite polaznika iz liste</label>
+        <input list="polaznici" id="polaznici" name="polaznik">
+        <datalist id="polaznici">
+        <option value="Blažić">
+        <option value="Bunjan">
+        <option value="Nogić">
+        <option value="Štimac">
+        <option value="Rodić">
+        </datalist>
+        <input type="submit">
+        <br><br>
+    <!--output-->
+        0
+        <input type="range"  id="a" name="a" value="50">
+        100 +
+        <input type="number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+        <br><br>
+        <input type="submit"><br><br>
+    <!--optgroup-->
+        <label for="cars">Choose a car:</label>
+        <select  name="cars" id="cars">
+        <optgroup label="Swedish Cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+        </optgroup>
+        <optgroup label="German Cars">
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </optgroup>
+        </select><br><br>
+        <input type="submit"><br><br>
+    </form>
+    <!--multimedia - grafika -->
+    <img src="https://upload.wikimedia.org/wikipedia/en/7/73/Luigi_NSMBUDX.png"><br>
+    <img src="./images/nintendosm2.jpg" width="300">
+
+</body>
+</html>

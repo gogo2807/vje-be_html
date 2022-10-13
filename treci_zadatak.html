@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Goran Nogic">
+    <title>Treci zadatak</title>
+</head>
+<body>
+    <!--Drugi dio -->
+    <form action="#" method="get">
+        <!--fieldset-->
+        <fieldset>
+            <legend>Nintendo konzole</legend>
+            <label for="NES">Nintendo Entertainment System</label><br>
+            <input type="text" id="NES" name="NES" value="Best console overall"><br>
+            <label for="SNES">Super Nintendo Entertainment System</label><br>
+            <input type="text" id="SNES" name="SNES" value="Second best console"><br>
+        </fieldset><br><br>
+        <!--datalist-->
+        <label for="console">Choose your console from the list:</label>
+        <input list="consoles" name="console" id="console">
+        <datalist id="consoles">
+          <option value="NES">
+          <option value="SNES">
+          <option value="Nintendo Wii">
+          <option value="N64">
+          <option value="Gameboy">
+        </datalist>
+        <input type="submit"><br><br>
+        <!--optgroup-->
+        <label for="games">Choose a game:</label>
+        <select  name="games" id="games">
+          <optgroup label="nintendo games">
+            <option value="super mario">Super Mario</option>
+            <option value="zelda">Zelda</option>
+            <option value="ice climber">Ice Climber</option>
+            <option value="paper boy">Paper Boy</option>
+          </optgroup>
+        </select><br><br>
+        <!--textarea-->
+        <label for="post">Describe your favorite console</label><br>
+        <textarea id="post" name="poruka" rows="10" cols="150">
+            My favorite console is NES.
+            </textarea>
+    </form>
+    
+</body>
+</html>
