@@ -50,15 +50,21 @@
                     </ul>
                 <center>
                     <p><b>Donirajte željeni iznos donacije za dječje festivale:</b></p>
-                    <label for="donacija">Donacija</label><br />
+                    <label for="donacija">Donacija u kunama</label><br>
+                    0
                     <input
                         type="range"
                         id="donacija"
                         name="donacija"
                         min="0"
-                        max="100000"
+                        max="1000"
+                        value="100"
+                        step="50"
+                        oninput="donacija_disp.value = donacija.value"
                     >
-                
+                    1000
+                    <output id="donacija_disp"></output><br>
+                    <input type="submit" value="Hvala na donaciji">
                 <h3>Poslušaj pjesmu</h3>
                 <audio controls>
                     <source src="./audio/pjesma1.mp3" type="audio/mpeg">
