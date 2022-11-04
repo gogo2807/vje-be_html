@@ -1,0 +1,33 @@
+.container1 {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: blue;
+    margin: 20px;
+}
+
+.container1 > div {
+    background-color: coral;
+}
+
+.container2 {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: blueviolet;
+    margin: 20px;
+}
+
+.container2 > div {
+    background-color: darkgreen;
+}
+
+.container3 {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: blue;
+    margin: 20px;
+    gap: 20px;
+}
+
+.container3 > div {
+    background-color: coral;
+}
